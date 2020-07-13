@@ -39,6 +39,10 @@ body{
     background-color: #FFFFFF;
     color: var(--p-text-color);
 }
+h1,h2,h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 .list{
     list-style: none;
@@ -53,8 +57,8 @@ address{
                     /* HEADER */
 .link{
     display: block;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 31px;
+    padding-bottom: 31px;
 }
 .header-container{
     display: flex;
@@ -131,26 +135,68 @@ ul .header-tel:hover{
 }
                         /* MAIN */
 /* Hero section */
+.hero{
+    background-color: grey;
+}
+.hero-container{
+    width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 213px;
+    padding-bottom: 200px;
+}
 .hero-title{
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: var(--hero-main-color); 
+    margin-top: 0;
+    margin-bottom: 45px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-main-color); 
 }
 .hero-button{
-font-style: 400;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.87;
-background-color: #2196F3;
-text-align: center;
-letter-spacing: 0.06em;
-color: var(--hero-main-color);
+    min-width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-style: 400;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    background-color: #2196F3;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--hero-main-color);
 }
 /* FEATURES */
+.section-container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 94px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.list.features{
+    display: flex; 
+    padding-left: 0;   
+}
+.list-item{
+    width: 270px;
+}
+.list-title{
+    margin-top: 55px;
+    margin-bottom: 10px;
+}
+
 .list-item .list-title,
 b {
 font-size: 14px;
@@ -159,10 +205,13 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--title-color);
 }
-.list-item>p{
+
+.list-item>.features-text{
 font-size: 14px;
-line-height: 1.71x;
+line-height: 1.71;
 letter-spacing: 0.03em;
+margin-bottom: 0;
+margin-top: 0;
 }
 /* Чем мы занимаемся */
 
