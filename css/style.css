@@ -106,7 +106,7 @@ letter-spacing: 0.02em;
 .navigation-list-item:not(:last-child){
    margin-right: 50px; 
 }
-.
+
 ul .navigation-link{
     color: var(--title-color);
 }
@@ -136,7 +136,8 @@ ul .header-tel:hover{
                         /* MAIN */
 /* Hero section */
 .hero{
-    background-color: grey;
+    background-image: url(../images/hero-img.jpg);
+    background-size: cover;
 }
 .hero-container{
     width: 600px;
@@ -186,9 +187,22 @@ ul .header-tel:hover{
     justify-content: center;
 }
 .list.features{
-    display: flex; 
-    padding-left: 0;   
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;   
 }
+.list-item>img{
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
 .list-item{
     width: 270px;
 }
@@ -223,6 +237,13 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--title-color);
 }
+.direction-list{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
 .direction-link{
     font-weight: 700;
     font-size: 14px;
@@ -233,6 +254,42 @@ color: var(--title-color);
     color: var(--direction-link-color);
 }
 /* Наша команда */
+.team-container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 94px;
+    margin-top: 94px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.team-container .section-title{
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+.team-list{
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.list-title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.team-list-item {
+    background: #FFFFFF;
+/* material shadow v1 */
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-item p{
+    margin-top: 0;
+    margin-bottom: 16px;
+}
 .our-team-section{
     background-color: #F5F4FA;
 }
@@ -255,7 +312,42 @@ a .social-link:hover,
 a .social-link:focus{
     color: var(--hover-color);
 }
+.social-link{
+    display: block;
+    padding: 12px;
+}
+.social-link-list{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 206px;
+}
 /* Постоянные клиенты */
+.clients-list{
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.section-container .section-title{
+    margin-bottom: 50px;
+}
+.clients-list-item{
+    border: 1px solid #AFB1B8;
+box-sizing: border-box;
+border-radius: 4px;
+}
+.clients-list-link{
+    display: block;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
 ul .clients-list-link:hover,
 ul .clients-list-link:focus{
     color: var(--hover-color);
@@ -264,8 +356,30 @@ ul .clients-list-link:focus{
 footer{
     background-color: #2F303A;
 }
+.footer-container{
+    display: flex;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 94px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-address-div{
+    margin-right: 69px;
+}
+.footer-address-div .logo{
+    padding-top: 60px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
 .logo-text{
     color: var(--logo-footer-color);
+}
+.footer-address-list{
+    padding-left: 0;
+    margin-top: 20px;
+    padding-bottom: 60px;
 }
 ul .footer-address-link{
 font-size: 14px;
@@ -276,10 +390,11 @@ color: var(--direction-link-color);
 ul .footer-address-mail,
 ul .footer-address-tel{
     font-size: 14px;
-    line-height: 1.71
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
 ul .footer-address-mail:hover,
 ul .footer-address-tel:hover,
 ul .footer-address-link:hover,
@@ -288,9 +403,22 @@ ul .footer-address-tel:focus,
 ul .footer-address-link:focus{
     color:var(--hover-color);
 }
+.footer-join-div{
+    padding-top: 72px;
+}
 b{
     color: var(--direction-link-color);
 }
+.footer-list{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 20px; 
+    margin-bottom: 0;
+}
+.footer-list-item:not(:last-child){
+    margin-right: 10px;
+} 
 
                             /* PORTFOLIO PAGE */
 /* MAIN */
