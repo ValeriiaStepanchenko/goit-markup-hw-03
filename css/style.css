@@ -147,6 +147,11 @@ ul .header-mail:hover,
 ul .header-tel:hover{
     color: var(--hover-color);
 }
+ul .header-mail:focus,
+ul .header-tel:focus{
+    color: var(--hover-color);
+}
+
                         /* MAIN */
 /* Hero section */
 .hero{
@@ -272,7 +277,7 @@ color: var(--title-color);
 /* Наша команда */
 .our-team-section .container{
     padding-bottom: 94px;
-    margin-top: 94px;
+    /* margin-top: 94px; */
     justify-content: center;
 }
 .container .section-title{
@@ -374,16 +379,20 @@ footer{
 }
 footer .container{
     display: flex;
-    margin-top: 94px;
+    /* margin-top: 94px; */
     padding-bottom: 60px;
+    padding-top: 72px;
 }
 .footer-address-div{
     margin-right: 69px;
 }
 .footer-address-div .logo{
-    padding-top: 60px;
+    /* padding-top: 60px; */
     padding-bottom: 0;
     margin-bottom: 20px;
+}
+footer .logo.link{
+    padding-top: 0px;
 }
 .logo-text{
     color: var(--logo-footer-color);
@@ -414,7 +423,7 @@ ul .footer-address-link:focus{
     color:var(--hover-color);
 }
 .footer-join-div{
-    padding-top: 72px;
+    padding-top: 0px;
 }
 b{
     color: var(--direction-link-color);
@@ -492,6 +501,7 @@ color: var(--hover-filter-color);
     margin-right: 30px;
     margin-bottom: 30px;
     border: 1px solid #EEEEEE;
+    outline: none;
 }
 .portfolio-list-item:hover,
 .portfolio-list-item:focus{
@@ -499,6 +509,7 @@ color: var(--hover-filter-color);
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
+
 .portfolio-list-item:nth-child(3n){
     margin-right: 0px;
 }
